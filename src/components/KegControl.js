@@ -29,6 +29,15 @@ class KegControl extends React.Component {
     }
   };
 
+  // handleSellClick = (kegToEdit) => {
+  //   const editedMainKegList = this.state.mainKegList
+  //     .filter((keg) => keg.id !== this.state.selectedKeg.id)
+  //     .concat(kegToEdit);
+  //   this.setState((prevState, props) => ({
+  //     counter: prevState.counter + 1
+  // }));
+  // }
+
   handleEditClick = () => {
     this.setState({ editing: true });
   };
@@ -86,6 +95,7 @@ class KegControl extends React.Component {
           keg={this.state.selectedKeg}
           onClickingDelete={this.handleDeletingKeg}
           onClickingEdit={this.handleEditClick}
+          on
         />
       );
       buttonText = "Return to Keg List";
