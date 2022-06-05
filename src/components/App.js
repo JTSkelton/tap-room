@@ -7,8 +7,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      {/* <Keg />
-      <KegList /> */}
+      <KegList />
     </React.Fragment>
   );
 }
