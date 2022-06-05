@@ -11,11 +11,15 @@ function KegDetail(props) {
         <th>Brand</th>
         <th>Price</th>
         <th>Alcohol Content</th>
+        <th>Pints Remaining</th>
+        <th>Pints Sold</th>
         <tbody>
           <td>{keg.name}</td>
           <td>{keg.brand}</td>
           <td>{keg.price}</td>
           <td>{keg.alcoholContent}</td>
+          <td>{keg.pintsRemaining}</td>
+          <td>{keg.pintsSold}</td>
         </tbody>
       </table>
       <button onClick={props.onClickingEdit}>Update Keg</button>
