@@ -17,9 +17,14 @@ function ReusableForm(props) {
           type="number"
           name="pintsRemaining"
           placeholder="124"
-          value="124"
+          defaultValue="124"
         />
-        <input type="number" name="pintsSold" placeholder="0" value="0" />
+        <input
+          type="number"
+          name="pintsSold"
+          placeholder="0"
+          defaultValue="0"
+        />
         <button type="submit">{props.buttonText}</button>
       </form>
     </React.Fragment>
