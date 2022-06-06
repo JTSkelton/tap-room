@@ -6,15 +6,20 @@ function KegDetail(props) {
 
   return (
     <React.Fragment>
+      <h1>Drink Details</h1>
       <table>
-        <th>Name</th>
-        <th>Brand</th>
-        <th>Price</th>
-        <th>Alcohol Content</th>
-        <th>Pints Remaining</th>
-        <th>Pints Sold</th>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Alcohol Content</th>
+            <th>Pints Remaining</th>
+            <th>Pints Sold</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr class="table-light">
+          <tr className="table-light">
             <td>{keg.name}</td>
             <td>{keg.brand}</td>
             <td>{keg.price}</td>
@@ -25,7 +30,7 @@ function KegDetail(props) {
         </tbody>
       </table>
       <button onClick={props.onClickingEdit}>Update Keg</button>
-      <button onClick={() => onClickingDelete(keg.id)}>Delete Keg</button>{" "}
+      <button onClick={() => onClickingDelete(keg.id)}>Delete Keg</button>
       <hr />
     </React.Fragment>
   );

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Belgain White",
+    "brand": "Blue Moon",
+    "price": "5.00",
+    "alcoholContent": "5.4",
+    "pintsRemaining": "10",
+    "pintsSold": "114",
+    "id": "4"
+  },
+  {
+    "name": "Stout",
+    "brand": "Guiness",
+    "price": "6.00",
+    "alcoholContent": "4.2",
+    "pintsRemaining": "124",
+    "pintsSold": "0",
+    "id": "1"
+  },
+  {
+    "name": "Corona Extra",
+    "brand": "Cervecería Modelo",
+    "price": "5.00",
+    "alcoholContent": "4.5",
+    "pintsRemaining": "124",
+    "pintsSold": "0",
+    "id": "2"
+  }
+]
