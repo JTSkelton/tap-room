@@ -32,31 +32,21 @@ class KegControl extends React.Component {
     }
   };
 
-  handleSellClick = (id) => {
-    console.log(this.state.mainKegList);
-    const selectedKegg = this.state.mainKegList.filter(
-      (keg) => keg.id === id
-    )[0];
-    if (parseInt(selectedKegg.pintsRemaining) <= 0)
-      return alert("Keg is Empty");
-    else {
-      const pints = (parseInt(selectedKegg.pintsRemaining) - 1).toString();
-      const pintsNowSold = (parseInt(selectedKegg.pintsSold) + 1).toString();
-      const newSelectedKeg = {
-        ...selectedKegg,
-        pintsSold: pintsNowSold,
-        pintsRemaining: pints,
-      };
-      const editedMainKegList = this.state.mainKegList
-        .filter((keg) => keg.id !== selectedKegg.id)
-        .concat(newSelectedKeg)
-        .sort(function (a, b) {
-          return a.id - b.id;
-        });
-      this.setState({
-        mainKegList: editedMainKegList,
-      });
-    }
+  handleSellClick = (kegId) => {
+    const newMainKegList = this.state.mainKegList.map((element) => {
+      if (element.id === kegId && element.pintsRemaining >= 1) {
+        const keg = {
+          ...element,
+          pintsRemaining: element.pintsRemaining - 1,
+          pintsSold: element.pintsSold + 1,
+        };
+        return keg;
+      }
+      return element;
+    });
+    this.setState({
+      mainKegList: newMainKegList,
+    });
   };
 
   handleEditClick = () => {

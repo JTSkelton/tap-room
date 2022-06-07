@@ -10,7 +10,7 @@ function ReusableForm(props) {
           <br></br>
           <input type="text" name="brand" placeholder="Brand" /> <br></br>
           <br></br>
-          <input type="text" name="price" placeholder="Price" /> <br></br>
+          <input type="number" name="price" placeholder="Price" /> <br></br>
           <br></br>
           <input
             type="text"
