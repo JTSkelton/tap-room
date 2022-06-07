@@ -14,7 +14,7 @@
     "price": "6.00",
     "alcoholContent": "4.2",
     "pintsRemaining": 124,
-    "pintsSold": "0",
+    "pintsSold": 0,
     "id": "1"
   },
   {

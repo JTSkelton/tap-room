@@ -23,7 +23,7 @@ function ReusableForm(props) {
             type="number"
             name="pintsRemaining"
             placeholder="124"
-            defaultValue="124"
+            // defaultValue="124"
           />{" "}
           <br></br>
           <br></br>
@@ -31,7 +31,7 @@ function ReusableForm(props) {
             type="number"
             name="pintsSold"
             placeholder="0"
-            defaultValue="0"
+            // defaultValue="0"
           />{" "}
           <br></br>
           <br></br>
