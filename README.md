@@ -36,10 +36,10 @@ A website to track and manage kegs for a tap room.
 ## Contact Me
 
 Let me know if you run into any issues or have questions, ideas or concerns:
-dolanp1992@gmail.com
+skelton.jt9@gmail.com
 
 ## License
 
 _MIT_
 
-Copyright (c) _2022_ _Patrick Dolan_
+Copyright (c) _2022_ _Jack Skelton_
