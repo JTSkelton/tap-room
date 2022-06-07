@@ -33,6 +33,7 @@ class KegControl extends React.Component {
   };
 
   handleSellClick = (id) => {
+    console.log(this.state.mainKegList);
     const selectedKegg = this.state.mainKegList.filter(
       (keg) => keg.id === id
     )[0];

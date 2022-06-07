@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import Keg from "./Keg";
 import PropTypes from "prop-types";
+import React from "react";
 
 function KegList(props) {
   const { onPintsClicked, onKegSelection } = props;
